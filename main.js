@@ -45,7 +45,7 @@ fromVoice.addEventListener('click', function(){
 toVoice.addEventListener('click', function(){
     let fromTalk;
     fromTalk = new SpeechSynthesisUtterance(to_translate.value);
-    fromTalk.lang = langOpt[1].value;
+    fromTalk.lang = langOpt[0].value;
     speechSynthesis.speak(fromTalk);
 });
 
